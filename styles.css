@@ -131,7 +131,7 @@ p.descripcion {
    font-size: 50px;
    line-height: 1.1;
    color: rgb(65, 65, 65);
-   margin-bottom: 22px;
+   margin-bottom: 20px;
 }
 
 .texto-portada p {
@@ -139,7 +139,7 @@ p.descripcion {
    line-height: 1.6;
    color: rgb(66, 66, 66);
    max-width: 680px;
-   margin-bottom: 28px;
+   margin-bottom: 20px;
 }
 
 .botones-portada {
@@ -169,8 +169,8 @@ p.descripcion {
 }
 
 .imagen-portada {
-   width: 48%;
-   max-width: 760px;
+   width: 100%;
+   max-width: 710px;
 }
 
 .imagen-portada img {
