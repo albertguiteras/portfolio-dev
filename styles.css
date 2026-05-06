@@ -227,6 +227,7 @@ p.descripcion {
 
 .proj-link:hover {
    transform: scale(1.1);
+   background-color: rgb(124, 124, 124);
 }
 
 /* EXPERIENCIA */
