@@ -1,7 +1,6 @@
 # portfolio-dev
 
-Portafolio personal profesional con múltiples secciones: About Me, Experience, Projects, Skills y Contacto.
-Esta lines es una prueba 
+Portafolio personal profesional con múltiples secciones: About Me, Projects, Skills y Contacto.
 
 ## Tecnologías
 
