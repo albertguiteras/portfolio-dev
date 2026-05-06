@@ -1,6 +1,6 @@
 * {
-   margin: 0px;
-   padding: 0px;
+   margin: 0;
+   padding: 0;
    box-sizing: border-box;
    font-family: 'Work Sans', sans-serif;
 }
@@ -16,40 +16,54 @@ body {
    flex-direction: column;
    min-height: 100vh;
    background-color: rgb(241, 247, 255);
-   width: 100%;
+}
+
+p {
+   font-weight: 400;
+   line-height: 1.6;
+   color: rgb(80, 80, 80);
+}
+
+p strong {
+   font-weight: 600;
+   color: rgb(20, 20, 20);
 }
 
 h1.titulos {
    text-align: center;
    margin-bottom: 10px;
+   font-size: 32px;
+   font-weight: 700;
+   letter-spacing: -0.5px;
+   color: rgb(40, 40, 40);
 }
 
 p.descripcion {
    text-align: center;
    margin-bottom: 30px;
+   margin-top: 30px;
 }
 
 /* CABECERA */
 
 header {
    display: flex;
-   flex-direction: row;
    align-items: center;
    justify-content: space-between;
    padding: 15px 40px;
    background-color: rgb(255, 255, 255);
    border-bottom: 2px solid rgb(206, 206, 206);
-   width: 100%;
 }
 
 header h1 {
-   color: rgb(44, 44, 44);
-   font-size: 24px;
+   font-size: 26px;
+   font-weight: 600;
+   letter-spacing: -1px;
+   color: rgb(30, 30, 30);
 }
 
 header nav ul {
    display: flex;
-   flex-direction: row;
    align-items: center;
    list-style: none;
    gap: 30px;
@@ -58,8 +72,10 @@ header nav ul {
 header nav ul a {
    text-decoration: none;
    color: rgb(89, 89, 89);
-   font-weight: 600;
-   transition: transform 0.2s ease;
+   font-weight: 500;
+   font-size: 16px;
+   letter-spacing: 0.3px;
+   transition: all 0.2s ease;
    display: inline-block;
 }
 
@@ -77,7 +93,7 @@ header nav ul a:hover {
    background-color: rgb(211, 211, 211);
    padding: 10px;
    border-radius: 5px;
-   transition: transform 0.2s ease;
+   transition: all 0.2s ease;
 }
 
 .boton-descarga:hover {
@@ -88,19 +104,8 @@ header nav ul a:hover {
 
 main {
    flex: 1;
-   width: 100%;
    padding: 40px 60px;
    background-color: rgb(238, 238, 238);
-}
-
-h1.titulos {
-   text-align: center;
-   margin-bottom: 10px;
-}
-
-p.descripcion {
-   text-align: center;
-   margin-bottom: 30px;
 }
 
 /* PORTADA */
@@ -127,16 +132,16 @@ p.descripcion {
 }
 
 .texto-portada h1 {
-   font-size: 50px;
-   line-height: 1.1;
-   color: rgb(65, 65, 65);
+   font-size: 56px;
+   font-weight: 600;
+   line-height: 1.05;
+   letter-spacing: -1.5px;
+   color: rgb(20, 20, 20);
    margin-bottom: 20px;
 }
 
 .texto-portada p {
    font-size: 20px;
-   line-height: 1.6;
-   color: rgb(66, 66, 66);
    max-width: 680px;
    margin-bottom: 20px;
 }
@@ -153,12 +158,14 @@ p.descripcion {
    justify-content: center;
    border-radius: 5px;
    padding: 14px 26px;
-   font-weight: 700;
+   font-weight: 600;
+   letter-spacing: 0.5px;
    text-decoration: none;
    width: 180px;
 
    background-color: rgb(92, 92, 92);
    color: rgb(255, 255, 255);
+   transition: all 0.2s ease;
 }
 
 .boton-primario:hover,
@@ -186,7 +193,6 @@ p.descripcion {
    align-items: center;
 
    gap: 30px;
-   width: 100%;
 }
 
 .tarjeta-proyecto {
@@ -197,8 +203,9 @@ p.descripcion {
 }
 
 .tarjeta-proyecto h3 {
-   font-size: 21px;
-   color: rgb(61, 61, 61);
+   font-size: 20px;
+   font-weight: 700;
+   color: rgb(40, 40, 40);
    margin: 15px;
 }
 
@@ -212,28 +219,26 @@ p.descripcion {
    display: flex;
    justify-content: flex-end;
    gap: 5px;
-   width: 100%;
 }
 
 .enlaces-proyecto a {
    margin: 10px;
    color: rgb(51, 51, 51);
-   background-color: rgb(233, 233, 233);
+   background-color: rgb(211, 211, 211);
    padding: 10px;
    border-radius: 4px;
    text-decoration: none;
    font-weight: 600;
+   transition: all 0.2s ease;
 }
 
-.proj-link:hover {
+.enlaces-proyecto a:hover {
    transform: scale(1.1);
-   background-color: rgb(124, 124, 124);
 }
 
 /* EXPERIENCIA */
 
 .experiencia {
-   width: 100%;
    text-align: center;
 }
 
@@ -246,7 +251,6 @@ p.descripcion {
 
 .formulario-contacto {
    padding: 40px 60px;
-   width: 100%;
    text-align: left;
 }
 
@@ -285,8 +289,7 @@ p.descripcion {
    border-color: rgb(46, 46, 46);
 }
 
-.formulario-contacto button,
-.boton-primario {
+.formulario-contacto button {
    background-color: rgb(89, 89, 89);
    color: rgb(255, 255, 255);
    padding: 15px 35px;
@@ -295,12 +298,11 @@ p.descripcion {
    font-size: 16px;
    font-weight: 600;
    cursor: pointer;
-   transition: background-color 0.2s ease;
+   transition: all 0.2s ease;
    align-self: center;
 }
 
-.formulario-contacto button:hover,
-.boton-primario:hover {
+.formulario-contacto button:hover {
    background-color: rgb(51, 51, 51);
 }
 
@@ -308,12 +310,10 @@ p.descripcion {
 
 .grilla-habilidades {
    display: flex;
-   flex-direction: row;
    flex-wrap: wrap;
    justify-content: center;
    gap: 25px;
    padding: 40px 60px;
-   width: 100%;
 }
 
 .categoria-habilidad {
@@ -327,8 +327,9 @@ p.descripcion {
 }
 
 .categoria-habilidad h3 {
-   font-size: 22px;
-   color: rgb(54, 54, 54);
+   font-size: 20px;
+   font-weight: 700;
+   color: rgb(40, 40, 40);
    margin-bottom: 20px;
    padding-bottom: 10px;
    border-bottom: 2px solid rgb(240, 240, 240);
@@ -402,15 +403,92 @@ p.descripcion {
 
 footer {
    display: flex;
-   flex-direction: row;
    justify-content: center;
    gap: 80px;
    padding: 20px 0;
    border-top: 2px solid rgb(206, 206, 206);
-   width: 100%;
    background-color: rgb(255, 255, 255);
 }
 
 footer a img {
    height: 30px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+   header {
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+   }
+
+   header nav ul {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+   }
+
+   main {
+      padding: 20px;
+   }
+
+   .portada {
+      flex-direction: column;
+      width: 95%;
+      gap: 40px;
+      margin-top: 40px;
+   }
+
+   .texto-portada {
+      width: 100%;
+      align-items: center;
+      text-align: center;
+   }
+
+   .texto-portada h1 {
+      font-size: 36px;
+   }
+
+   .texto-portada p {
+      font-size: 18px;
+   }
+
+   .botones-portada {
+      justify-content: center;
+      flex-wrap: wrap;
+   }
+
+   .tarjeta-proyecto {
+      width: 95%;
+   }
+
+   .experiencia img {
+      margin-top: 40px;
+      height: auto;
+      max-width: 90%;
+   }
+
+   .formulario-contacto {
+      padding: 20px 15px;
+   }
+
+   .grilla-habilidades {
+      padding: 20px 15px;
+   }
+
+   .categoria-habilidad {
+      flex: 1 1 100%;
+      min-width: 100%;
+   }
+
+   .sobremi {
+      width: 95%;
+      padding: 20px;
+   }
+
+   footer {
+      gap: 30px;
+      flex-wrap: wrap;
+   }
 }
